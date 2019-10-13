@@ -31,7 +31,8 @@ body {
 }
 
 section {
-    margin-top: 10%;
+    padding-top: 5%;
+    margin-top: 5%;
 }
 
 
@@ -203,16 +204,18 @@ article {
 }
 
 .cockatail__box__element__pic {
-    height: 300px;
+    height: 200px;
     margin: 0 auto;
+    position: relative;
+    padding: 20% 20%;
 }
 
 .cockatail__box__element__pic img {
     display: block;
-    /*    position: absolute;*/
-    /*    width: 10%;*/
+    position: absolute;
+    width: 50%;
     bottom: 0;
-    margin: 0 auto;
+    margin: 0 5%;
 }
 
 .lemon {
@@ -255,7 +258,7 @@ article {
     text-align: center;
 }
 
-.fork{
+.fork {
     position: absolute;
     z-index: -1;
     display: block;
@@ -285,7 +288,7 @@ article {
 .sweets__box {
     display: flex;
     width: 70%;
-    margin: 0 auto;
+    margin: 0 auto 7%;
 }
 
 .sweets__box__element {
@@ -302,15 +305,20 @@ article {
 }
 
 .sweets__box__element__pic {
-    height: 150px;
+    height: 45%;
+    position: relative;
+    padding: 10px;
 }
 
 .sweets__box__element__pic img {
     display: block;
     margin: 0 auto;
+    position: absolute;
+    width: 80%;
+    bottom: 0;
 }
 
-.cookie{
+.cookie {
     position: absolute;
     z-index: -1;
     display: block;
@@ -321,7 +329,7 @@ article {
 #ensemble {
     background: url(images/ensemble.png);
     position: relative;
-    padding: 5%;
+    padding: 5% 0px;
 }
 
 .ensemble__box {
@@ -344,6 +352,8 @@ article {
 
 .ensemble__box__element .day {
     font-size: 1.8em;
+    color: #ffd042;
+    font-weight: 1000;
 }
 
 .ensemble__box__element .time {
@@ -357,6 +367,17 @@ article {
     width: 60%;
     margin: 0 auto;
 }
+
+iframe {
+    display: block;
+    margin: 0 auto;
+}
+
+.detail__shop__map {
+    width: 50%;
+    margin: 0 auto;
+}
+
 
 .detail__shop__txt {
     width: 50%;
@@ -372,11 +393,33 @@ article {
 .detail__shop__txt__box .title {
     font-size: 1.7em;
     margin-bottom: 1em;
+    border-bottom: #ffd042 2px;
+}
+
+/*色の変わる線について*/
+h6 {
+    border-bottom: solid 3px #ffd042;
+    position: relative;
+    font-size: 1.8em;
+    margin-bottom: 10%;
+}
+
+h6:after {
+    position: absolute;
+    content: " ";
+    display: block;
+    border-bottom: solid 3px #c44100;
+    bottom: -3px;
+    width: 20%;
 }
 
 .detail__shop__txt__box .data {
     margin-left: 10em;
     line-height: 2.5em;
+}
+
+.detail__shop__txt__box p {
+    margin-left: 10%;
 }
 
 .detail__band {
@@ -401,30 +444,31 @@ article {
     padding: 1em 3em;
 }
 
-.kakko:before,.kakko:after{ 
-    content:'';
+.kakko:before,
+.kakko:after {
+    content: '';
     width: 100px;
     height: 70px;
     position: absolute;
     display: inline-block;
 }
 
-.kakko:before{
+.kakko:before {
     border-left: solid 2px #ffd042;
     border-top: solid 2px #ffd042;
-    top:0;
+    top: 0;
     left: 0;
 }
 
-.kakko:after{
+.kakko:after {
     border-right: solid 2px #ffd042;
     border-bottom: solid 2px #ffd042;
-    bottom:0;
+    bottom: 0;
     right: 0;
 }
 
 .kakko p {
-    margin: 0; 
+    margin: 0;
     padding: 0;
 }
 
@@ -464,7 +508,7 @@ article {
 footer {
     background-color: #ffd042;
     text-align: center;
-    padding: 5px; 
+    padding: 5px;
     color: #c44100;
 }
 
@@ -475,9 +519,9 @@ footer {
     -webkit-animation-fill-mode: both;
     -ms-animation-fill-mode: both;
     animation-fill-mode: both;
-    -webkit-animation-duration: 1.5s;
-    -ms-animation-duration: 1.5s;
-    animation-duration: 1.5s;
+    -webkit-animation-duration: 2.0s;
+    -ms-animation-duration: 2.0s;
+    animation-duration: 2.0s;
     -webkit-animation-name: fuwatAnime;
     -ms-animation-name: fuwatAnime;
     animation-name: fuwatAnime;
