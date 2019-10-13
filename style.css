@@ -42,6 +42,7 @@ header {
     width: 100%;
     position: fixed;
     top: 0;
+    z-index: 10;
 }
 
 header a {
@@ -132,34 +133,35 @@ h3 {
     font-size: 1.8em;
     margin-left: 11%;
     margin-bottom: 10px;
-/*    border-bottom: solid 10px #ffd042;*/
-/*    display:inline-block*/
+    /*    border-bottom: solid 10px #ffd042;*/
+    /*    display:inline-block*/
 }
-
-
-
-
-
-.menu__box__element__line {
-    padding: 0.5em 1em;
-    margin: 1em 0;
-    color: #c44100;
-    border-left: dashed 2px #ffd042;/*左線*/
-/*    border-right: double 3px #4ec4d3;右線*/
-    padding: 8%;
-}
-
-.menu__box__element__line p {
-    margin: 0; 
-    padding: 0;
-}
-
-
 
 h4 {
     font-family: 'basic-reg';
     font-size: 1.3em;
     margin-left: -20px;
+}
+
+h5 {
+    font-family: 'hannari';
+    font-size: 1.2em;
+    margin-left: 5px;
+}
+
+.menu__box__element__line {
+    padding: 0.5em 1em;
+    margin: 1em 0;
+    color: #c44100;
+    border-left: dashed 2px #ffd042;
+    /*左線*/
+    /*    border-right: double 3px #4ec4d3;右線*/
+    padding: 8%;
+}
+
+.menu__box__element__line p {
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -192,7 +194,7 @@ article {
 .cocktail__box {
     display: flex;
     width: 70%;
-    margin: 0 auto 50px;
+    margin: 0 auto 150px;
 }
 
 .cocktail__box__element {
@@ -208,9 +210,19 @@ article {
 .cockatail__box__element__pic img {
     display: block;
     /*    position: absolute;*/
-    /*    bottom: 0;*/
+    /*    width: 10%;*/
+    bottom: 0;
     margin: 0 auto;
 }
+
+.lemon {
+    position: absolute;
+    z-index: -1;
+    display: block;
+    padding: 1% 2%;
+    width: 10%;
+}
+
 
 .cocktail__box__element p {
     /*    display: block;*/
@@ -218,6 +230,7 @@ article {
     text-align: center;
     margin: 70px auto;
     font-size: 1.3em;
+    position: relative;
 }
 
 
@@ -242,13 +255,26 @@ article {
     text-align: center;
 }
 
-.name {
-    height: 30%;
-    margin-top: 30%;
+.fork{
+    position: absolute;
+    z-index: -1;
+    display: block;
+    width: 60%;
+    padding: 20% 20%;
 }
 
-.name p {
+.pasta__box__element .name {
+    height: 30%;
+    margin-top: 30%;
+    position: relative;
+}
+
+.pasta__box__element .name p {
     font-size: 1.2em;
+}
+
+.explain {
+    margin-bottom: 20px;
 }
 
 .explain p {
@@ -270,15 +296,26 @@ article {
 
 .sweets__box__element p {
     text-align: center;
+    margin: 70px auto;
+    font-size: 1em;
+    position: relative;
 }
 
 .sweets__box__element__pic {
-    height: 200px;
+    height: 150px;
 }
 
 .sweets__box__element__pic img {
     display: block;
     margin: 0 auto;
+}
+
+.cookie{
+    position: absolute;
+    z-index: -1;
+    display: block;
+    padding: 2% 1.5%;
+    width: 8%;
 }
 
 #ensemble {
@@ -317,24 +354,28 @@ article {
 
 .detail__shop {
     display: flex;
-    width: 70%;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.detail__shop__txt {
+    width: 50%;
     margin: 0 auto;
 }
 
 .detail__shop__txt__box {
-    /*    margin-left: 8%;*/
     padding: 2%;
-    width: 150%;
+    width: 70%;
+    margin: 0 auto;
 }
 
 .detail__shop__txt__box .title {
-    font-size: 1.5em;
+    font-size: 1.7em;
     margin-bottom: 1em;
 }
 
 .detail__shop__txt__box .data {
-    width: 90%;
-    margin-left: 5%;
+    margin-left: 10em;
     line-height: 2.5em;
 }
 
@@ -349,33 +390,124 @@ article {
 }
 
 .detail__band__txt {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     line-height: 2.5em;
 }
+
+/*カギカッコについて*/
+.kakko {
+    position: relative;
+    padding: 1em 3em;
+}
+
+.kakko:before,.kakko:after{ 
+    content:'';
+    width: 100px;
+    height: 70px;
+    position: absolute;
+    display: inline-block;
+}
+
+.kakko:before{
+    border-left: solid 2px #ffd042;
+    border-top: solid 2px #ffd042;
+    top:0;
+    left: 0;
+}
+
+.kakko:after{
+    border-right: solid 2px #ffd042;
+    border-bottom: solid 2px #ffd042;
+    bottom:0;
+    right: 0;
+}
+
+.kakko p {
+    margin: 0; 
+    padding: 0;
+}
+
+
+
 
 .detail__sns {
     height: 200px;
 }
 
+
 .detail__sns__box {
-    width: 300px;
+    width: 30em;
     margin: 0 auto;
 }
 
 .detail__sns__box a {
     font-size: 3em;
-    margin: 0 20px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
     color: #c44100;
 }
 
 .detail__sns__box a:hover {
-    margin: 0 20px;
+    /*    margin: 0 20px;*/
     color: #ffd042;
     transition: 0.3s;
 }
 
+.detail__sns__box__element {
+    display: inline-block;
+    width: 32%;
+    margin: 0 auto;
+}
+
 footer {
+    background-color: #ffd042;
     text-align: center;
-    margin-bottom: 1em;
+    padding: 5px; 
+    color: #c44100;
+}
+
+
+
+/*ふわっと*/
+.fuwatAnime {
+    -webkit-animation-fill-mode: both;
+    -ms-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1.5s;
+    -ms-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-name: fuwatAnime;
+    -ms-animation-name: fuwatAnime;
+    animation-name: fuwatAnime;
+    visibility: visible !important;
+}
+
+@-webkit-keyframes fuwatAnime {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+
+@keyframes fuwatAnime {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-20px);
+        -ms-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
 }
