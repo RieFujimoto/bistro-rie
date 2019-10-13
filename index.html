@@ -8,9 +8,9 @@
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <!--fabiconの設定-->
     <link rel="shortcut icon" href="favicon.ico">
-<!--    SEOの設定-->
-   <meta name="description" content="筑波大学吹奏楽団による座れるカフェ。カクテル、パスタ、スイーツ、そして素敵なアンサンブル演奏をおたのしみください。">
-    
+    <!--    SEOの設定-->
+    <meta name="description" content="筑波大学吹奏楽団による座れるカフェ。カクテル、パスタ、スイーツ、そして素敵なアンサンブル演奏をおたのしみください。">
+
     <!--    jQueryプラグイン-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!--    レスポンシブ対応-->
@@ -19,11 +19,11 @@
 
 <body>
 
-    <div class="firstView">
+    <div id="firstView">
         <header>
             <div class="firstView__nav">
                 <ul>
-                    <li><a href="top">Home</a></li>
+                    <li><a href="#firstView">Home</a></li>
                     <li><a href="#menu">Menu</a></li>
                     <li><a href="#cocktail">Cocktail</a></li>
                     <li><a href="#pasta">Pasta</a></li>
@@ -54,7 +54,7 @@
 
 
         <div class="fuwat">
-                <h3><span class="under">Cocktail</span></h3>
+            <a href="#cocktail"><h3><span class="under">Cocktail</span></h3></a>
             <div class="menu__box">
                 <div class="menu__box__element">
                     <h4>original cocktails</h4>
@@ -123,7 +123,7 @@
         </div>
 
         <div class="fuwat">
-            <h3><span class="under">Pasta</span></h3>
+            <a href="#pasta"><h3><span class="under">Pasta</span></h3></a>
             <ul>
                 <div class="menu__box">
                     <div class="menu__box__element">
@@ -142,7 +142,7 @@
         </div>
 
         <div class="fuwat">
-            <h3><span class="under">Sweets</span></h3>
+            <a href="#sweets"><h3><span class="under">Sweets</span></h3></a>
             <div class="menu__box">
                 <div class="menu__box__element">
                     <ul>
@@ -572,11 +572,8 @@
                 });
             });
         });
-
     </script>
 
 
 
-</body>
-
-</html>
+</body></html>

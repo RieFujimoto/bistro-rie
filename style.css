@@ -60,14 +60,17 @@ header a:hover {
 }
 
 .firstView__nav {
+    width: 60%;
     display: block;
-    margin: 0 auto;
+    margin: 0px auto;
 }
 
 header ul {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     padding-top: 10px;
+    display: block;
+    margin: 0 auto;
 }
 
 .firstView__nav ul li {
@@ -76,7 +79,7 @@ header ul {
     margin: 0 3%;
 }
 
-.firstView {
+#firstView {
     background: #000 url(images/first-view.png);
     height: 800px;
     background-size: cover;
@@ -86,7 +89,7 @@ header ul {
 .firstView__center {
     margin: 0 auto;
     width: 80%;
-    padding-top: 80px;
+    padding-top: 3%;
 }
 
 .firstView__center .bistro-rie {
@@ -151,13 +154,17 @@ h5 {
 }
 
 .under {
-  background: linear-gradient(transparent 60%, #ffd042 40%);
+    background: linear-gradient(transparent 60%, #ffd042 40%);
 }
 
 .under__2 {
-  background: linear-gradient(transparent 60%, #c44100 40%);
+    background: linear-gradient(transparent 60%, #c44100 40%);
 }
 
+#menu a{
+    text-decoration: none;
+    color: #c44100;
+}
 .menu__box__element__line {
     padding: 0.5em 1em;
     margin: 1em 0;
@@ -245,9 +252,7 @@ article {
     position: relative;
 }
 
-.cocktail__box__element p:hover {
-   
-}
+.cocktail__box__element p:hover {}
 
 
 .pasta__box {
@@ -283,14 +288,14 @@ article {
     height: 30%;
     margin-top: 30%;
     position: relative;
-/*    display: table;*/
+    /*    display: table;*/
 }
 
 .pasta__box__element .name p {
     font-size: 1.2em;
-/*    display: block;*/
-/*    display: table-cell;*/
-/*    vertical-align: middle;*/
+    /*    display: block;*/
+    /*    display: table-cell;*/
+    /*    vertical-align: middle;*/
 }
 
 .explain {
@@ -369,8 +374,7 @@ article {
 
 .ensemble__box__element .day {
     font-size: 1.8em;
-    color: #fff7e1
-    font-weight: 1000;
+    color: #fff7e1 font-weight: 1000;
 }
 
 .ensemble__box__element .time {
