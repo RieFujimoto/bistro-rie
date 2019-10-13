@@ -150,6 +150,14 @@ h5 {
     margin-left: 5px;
 }
 
+.under {
+  background: linear-gradient(transparent 60%, #ffd042 40%);
+}
+
+.under__2 {
+  background: linear-gradient(transparent 60%, #c44100 40%);
+}
+
 .menu__box__element__line {
     padding: 0.5em 1em;
     margin: 1em 0;
@@ -227,6 +235,7 @@ article {
 }
 
 
+
 .cocktail__box__element p {
     /*    display: block;*/
     /*    position: absolute;*/
@@ -234,6 +243,10 @@ article {
     margin: 70px auto;
     font-size: 1.3em;
     position: relative;
+}
+
+.cocktail__box__element p:hover {
+   
 }
 
 
@@ -263,17 +276,21 @@ article {
     z-index: -1;
     display: block;
     width: 60%;
-    padding: 20% 20%;
+    padding: 10% 20%;
 }
 
 .pasta__box__element .name {
     height: 30%;
     margin-top: 30%;
     position: relative;
+/*    display: table;*/
 }
 
 .pasta__box__element .name p {
     font-size: 1.2em;
+/*    display: block;*/
+/*    display: table-cell;*/
+/*    vertical-align: middle;*/
 }
 
 .explain {
@@ -352,7 +369,7 @@ article {
 
 .ensemble__box__element .day {
     font-size: 1.8em;
-    color: #ffd042;
+    color: #fff7e1
     font-weight: 1000;
 }
 
