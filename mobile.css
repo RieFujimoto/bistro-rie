@@ -55,7 +55,7 @@ header a:hover {
 
 .firstView__nav {
     width: 10%;
-    display: block;
+    display: none;
     float: right;
     margin: 0px auto;
 }
@@ -68,28 +68,30 @@ header ul {
     margin: 0 auto;
 }
 
+/*
 .firstView__nav ul li {
     display: inline-block;
     float: left;
     margin: 0 3%;
 }
+*/
 
 #firstView {
     background: #000 url(images/first-view.png);
-    height: 800px;
+    height: 700px;
     background-size: cover;
 }
 
 
 .firstView__center {
     margin: 0 auto;
-    width: 80%;
-    padding-top: 10%;
+    width: 85%;
+    padding-top: 8%;
 }
 
 .firstView__center .bistro-rie {
     font-family: 'kino';
-    font-size: 7em;
+    font-size: 8em;
     text-align: left;
     color: #fff7e1;
     line-height: 1;
@@ -117,13 +119,14 @@ header ul {
 h1 {
     font-family: 'basic-bold';
     font-size: 2.5em;
-    margin-left: 9%;
+    margin-left: 3%;
 }
 
 h2 {
+    display: none;
     font-family: 'hannari';
     font-size: 2em;
-    margin-left: 4.5%;
+    margin-left: 1%;
     -ms-writing-mode: tb-rl;
     writing-mode: vertical-rl;
 }
@@ -131,7 +134,7 @@ h2 {
 h3 {
     font-family: 'basic-reg';
     font-size: 1.8em;
-    margin-left: 11%;
+    margin-left: 5%;
     margin-bottom: 10px;
     /*    border-bottom: solid 10px #ffd042;*/
     /*    display:inline-block*/
@@ -171,7 +174,8 @@ h5 {
     padding: 8%;
 }
 
-.menu__box__element__line p {
+.menu__box__element__line li {
+    font-size: 1.3em;
     margin: 0;
     padding: 0;
 }
@@ -187,30 +191,33 @@ article {
 
 .line {
     float: left;
+    display: none;
 }
 
 .menu__box {
-    display: flex;
+    display: block;
     width: 70%;
     margin: 0px auto 2%;
 }
 
 .menu__box__element {
-    width: 35%;
+    width: 100%;
 }
 
 .menu__box__element li {
     list-style: none;
+    font-size: 1.3em;
 }
 
 .cocktail__box {
-    display: flex;
-    width: 70%;
-    margin: 0 auto 150px;
+    width: 100%;
+    float: left;
+/*    margin: 0 auto 150px;*/
 }
 
 .cocktail__box__element {
-    width: 20%;
+    display: block;
+    width: 50%;
     /*    position: relative;*/
 }
 
@@ -380,8 +387,8 @@ article {
 }
 
 .detail__shop {
-    display: flex;
-    width: 60%;
+    display: block;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -397,7 +404,7 @@ iframe {
 
 
 .detail__shop__txt {
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -440,7 +447,7 @@ h6:after {
 }
 
 .detail__band {
-    width: 60%;
+    width: 95%;
     margin: 10% auto;
 }
 
@@ -452,7 +459,7 @@ h6:after {
 .detail__band__txt {
     width: 100%;
     margin: 0 auto;
-    line-height: 2.5em;
+    line-height: 1.8em;
 }
 
 /*カギカッコについて*/
@@ -498,7 +505,7 @@ h6:after {
 
 
 .detail__sns__box {
-    width: 30em;
+    width: 18em;
     margin: 0 auto;
 }
 
