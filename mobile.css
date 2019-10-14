@@ -35,47 +35,9 @@ section {
     margin-top: 5%;
 }
 
-h1 {
-    font-family: 'basic-bold';
-    font-size: 2.5em;
-    margin-left: 9%;
-}
-
-h2 {
-    font-family: 'hannari';
-    font-size: 2em;
-    margin-left: 4.5%;
-    -ms-writing-mode: tb-rl;
-    writing-mode: vertical-rl;
-}
-
-h3 {
-    font-family: 'basic-reg';
-    font-size: 1.8em;
-    margin-left: 11%;
-    margin-bottom: 10px;
-}
-
-h4 {
-    font-family: 'basic-reg';
-    font-size: 1.3em;
-    margin-left: -20px;
-}
-
-h5 {
-    font-family: 'hannari';
-    font-size: 1.2em;
-    margin-left: 5px;
-}
 
 header {
-    background-color: #c44100;
-    opacity: 0.85;
-    height: 45px;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 10;
+    height: 0px;
 }
 
 header a {
@@ -92,8 +54,9 @@ header a:hover {
 }
 
 .firstView__nav {
-    width: 60%;
+    width: 10%;
     display: block;
+    float: right;
     margin: 0px auto;
 }
 
@@ -121,32 +84,69 @@ header ul {
 .firstView__center {
     margin: 0 auto;
     width: 80%;
-    padding-top: 3%;
+    padding-top: 10%;
 }
 
 .firstView__center .bistro-rie {
     font-family: 'kino';
-    font-size: 10em;
+    font-size: 7em;
     text-align: left;
     color: #fff7e1;
+    line-height: 1;
 }
 
 .firstView__center .sohosai {
     font-family: 'kino';
-    font-size: 5em;
+    font-size: 4em;
     text-align: right;
     color: #fff7e1;
-    margin-top: 7%;
+    margin-top: 50%;
 }
 
 .firstView__txt p {
     color: #ffd042;
     font-family: 'hannari';
     text-align: center;
-    font-size: 1.3em;
+    font-size: 0.9em;
     display: block;
     float: left;
     margin: 10% 5%;
+}
+
+
+h1 {
+    font-family: 'basic-bold';
+    font-size: 2.5em;
+    margin-left: 9%;
+}
+
+h2 {
+    font-family: 'hannari';
+    font-size: 2em;
+    margin-left: 4.5%;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+}
+
+h3 {
+    font-family: 'basic-reg';
+    font-size: 1.8em;
+    margin-left: 11%;
+    margin-bottom: 10px;
+    /*    border-bottom: solid 10px #ffd042;*/
+    /*    display:inline-block*/
+}
+
+h4 {
+    font-family: 'basic-reg';
+    font-size: 1.3em;
+    margin-left: -20px;
+}
+
+h5 {
+    font-family: 'hannari';
+    font-size: 1.2em;
+    margin-left: 5px;
 }
 
 .under {
